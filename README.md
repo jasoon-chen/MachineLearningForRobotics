@@ -115,3 +115,33 @@ The rest of the code I believe is self-explanatory so I won't further explain th
   plt.show()
   ```
 </details>
+
+Continuing onto the Gradient Descent section, I believe that there is a mistake with the code. When finding the MSE for the new m and b values, the function that is provided I believe is incorrect. This is the code that is provided: 
+```py
+def compute_error_for_line_given_points(b,m,X,Y):
+    totalError = 0 	#sum of square error formula
+    for i in range (0, len(X)):
+        x = X
+        y = Y
+        totalError += (y[i]-(m*x[i] + b)) ** 2
+        mse = (totalError)/totalError.size
+        return mse
+```
+While this does compute the MSE for the first point, it does not compute the total MSE. To fix this, I believe that this is the correct solution which I have provided on the github profile. 
+```py
+def computeErrorForLineGivenPoints(self,b,m,X,Y):
+        totalError = 0
+        for i in range(0, len(X)):
+            x = X
+            y = Y
+            functionResult = m*x[i] + b
+            totalError += (y[i]-functionResult)**2
+        return (totalError)/len(X)
+```
+
+I also understand that the math portion may be a bit unclear in the deriviation, so I have attatched the deriviation under here. 
+<details>
+  <summary>Click Here Gradient Descent Math Deriviation</summary>
+  
+  ![Gradient Descent Math Deriviation](https://github.com/jasoon-chen/MachineLearningForRobotics/assets/45437968/c40b87fd-0a2f-4f00-8bc6-88c5ca5d1e77)
+</details>
