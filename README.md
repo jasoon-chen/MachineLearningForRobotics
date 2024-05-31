@@ -1,5 +1,9 @@
 # Machine Learning For Robotics
-This is to help people self learn ROS through [The Construct](https://www.theconstruct.ai/). Even though all of the tutorials and lessons are already on the website, this repository is meant to upload all of my solutions and also some hints while working through the project as some of them may not be clear. Feel free to create a github pull request or issue if you want to add onto this repository.
+This is to help people self learn basic machine learning concepts through [The Construct](https://app.theconstruct.ai/courses/machine-learning-for-robotics-47/). Even though all of the tutorials and lessons are already on the website, this repository is meant to upload all of my solutions and also some hints while working through the project as some of them may not be clear. Feel free to create a github pull request or issue if you want to add onto this repository. The topics that are covered in this course are:
+1. Linear/Logistic Regression and Regularization
+2. Supervised Learning: Backpropagation Algorithm and Deploying NN in ROS
+3. Unsupervised Learning: K-Means Algorithm
+4. Principle Component Analaysis
 
 # Status
 I am currently in progress of working through this course.
