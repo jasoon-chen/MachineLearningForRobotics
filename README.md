@@ -151,3 +151,8 @@ I also understand that the math portion may be a bit unclear in the deriviation,
 </details>
 
 For section 2.3, the code for plotting the mesh grid does not work. There appears to be some minor bugs and changes since it was last created, so I have attatched a Google Collab version of the code that should work as intended. There is also small comments that explain the code, however to be honest I still don't understand much of the code but I do hope to understand more of it as I go through the course. [Link to the Google Collab Notebook](https://colab.research.google.com/drive/10ITOg52E0z7LwvImpuonWSQcLmCbfYVK?usp=sharing)
+
+For section 2.5, the explanation for Logistic Regression is not really well explained. So the following videos below will cover basically what is explained in the course.
+1. [What is Logistic Regression?](https://www.youtube.com/watch?v=U1omz0B9FTw)
+2. [Cost Function of Logistic Regression](https://www.youtube.com/watch?v=ar8mUO3d05w)
+3. [Cross Entropy of Logistic Regression](https://youtube.com/watch?v=MztgenIfGgM)
