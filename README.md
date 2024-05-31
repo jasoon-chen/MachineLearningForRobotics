@@ -145,3 +145,5 @@ I also understand that the math portion may be a bit unclear in the deriviation,
   
   ![Gradient Descent Math Deriviation](https://github.com/jasoon-chen/MachineLearningForRobotics/assets/45437968/c40b87fd-0a2f-4f00-8bc6-88c5ca5d1e77)
 </details>
+
+For section 2.3, the code for plotting the mesh grid does not work. There appears to be some minor bugs and changes since it was last created, so I have attatched a Google Collab version of the code that should work as intended. There is also small comments that explain the code, however to be honest I still don't understand much of the code but I do hope to understand more of it as I go through the course. [Link to the Google Collab Notebook](https://colab.research.google.com/drive/10ITOg52E0z7LwvImpuonWSQcLmCbfYVK?usp=sharing)
