@@ -160,4 +160,8 @@ For section 2.5, the explanation for Logistic Regression is not really well expl
 For section 2.7/2.8, the explanation for L1 and L2 Regularization is not really well explained so I have attatched the following videos that explain both of them.
 1. [L2 Regularization](https://www.youtube.com/watch?v=Q81RR3yKn30)
 2. [L1 Regularization](https://www.youtube.com/watch?v=NGf0voTMlcs)
-   
+
+For section 3.3, the explanation for activation functions is not really well explained so I have attatched the following videos that helped explain the concepts to me. These videos are part of a series so I would recommend at least watching or skimming through some them anyways.
+1. [What are Neural Networks?](https://www.youtube.com/watch?v=CqOfi41LfDw&list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1)
+2. [Visualizing Backpropagation](https://www.youtube.com/watch?v=IN2XmBhILt4&list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1&index=5)
+3. [Visualizing ReLU Function](https://www.youtube.com/watch?v=68BZ5f7P94E&list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1&index=8)
