@@ -156,3 +156,8 @@ For section 2.5, the explanation for Logistic Regression is not really well expl
 1. [What is Logistic Regression?](https://www.youtube.com/watch?v=U1omz0B9FTw)
 2. [Cost Function of Logistic Regression](https://www.youtube.com/watch?v=ar8mUO3d05w)
 3. [Cross Entropy of Logistic Regression](https://youtube.com/watch?v=MztgenIfGgM)
+
+For section 2.7/2.8, the explanation for L1 and L2 Regularization is not really well explained so I have attatched the following videos that explain both of them.
+1. [L2 Regularization](https://www.youtube.com/watch?v=Q81RR3yKn30)
+2. [L1 Regularization](https://www.youtube.com/watch?v=NGf0voTMlcs)
+   
