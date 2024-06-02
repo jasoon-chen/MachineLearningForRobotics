@@ -34,7 +34,7 @@ num_examples = X.shape[0]
 ii = []
 error = []
 
-for i in range(3000):
+for i in range(1):
     # RELU Activation
     hiddenLayer = np.maximum(0, np.dot(X,W) + b)
     scores = np.dot(hiddenLayer, W2) + b2
@@ -76,7 +76,10 @@ for i in range(3000):
     W2 += -step_size * dW2
     b2 += -step_size * db2
 
-
+print("w",W.shape) #
+print("b",b.shape)
+print("w2", W2.shape)
+print("b2", b2.shape)
 # # Utilizing SKLearn
 # # Define your model
 # model = MLPClassifier(hidden_layer_sizes=(1000,), activation='relu', solver='sgd', alpha=0, batch_size='auto', learning_rate='constant', learning_rate_init=1e-0, max_iter=3000, random_state=None)
