@@ -38,12 +38,11 @@ HINT: check the place where are your training weights (Jupyter Notebook)
 """
 
 def load_weights():
-    
-    W2 = None
-    b2 = None
-    W  = None
-    b  = None
-    
+    W2 = np.load('/home/user/catkin_ws/src/weights_proj/w2.npy')
+    b2 = np.load('/home/user/catkin_ws/src/weights_proj/b2.npy')
+    W = np.load('/home/user/catkin_ws/src/weights_proj/w.npy')
+    b = np.load('/home/user/catkin_ws/src/weights_proj/b.npy')
+
     return W2,b2,W,b
 
 W2,b2,W,b = load_weights()
@@ -61,7 +60,10 @@ HINT: Reuse the same code for neural network you use in Unit 3 of this course
 """
 
 def test_prediction(XX):
-
+    W2,b2,W,b = load_weights()
+    hidden_layer = np.maximum(0, np.dot(XX, W) + b)
+    scores = np.dot(hidden_layer, W2) + b2
+    prediction = np.argmax(scores, axis=1)
     return int(prediction)
 
 """
@@ -71,8 +73,10 @@ HINT: Reuse the same code presented in Unit 4 of this course
 """
 
 def pol2cart(rho, phi):
-
+    x = rho * np.cos(phi)
+    y = rho * np.sin(phi)
     return (x, y)
+
 
 
 def clbk_laser(msg):
@@ -82,16 +86,9 @@ def clbk_laser(msg):
     global radar_left_
     global radar_right_
 
-"""
-## YOUR TASK NR: 4
-Define the range (for radar front) and number of radar beam (for radar left and radar right)
-HINT: Check the Unit 2, Unit 3 and Unit 4.
-HINT: Insert only the numbers, remove None (number for radar left is hights radar beam however for the right is lowest )
-HINT: For radar front the center is 360 (0 deg) hovever we use range -10 to 10 deg
-"""    
-    radar_front_ = min(min(msg.ranges[None:None]), 2)
-    radar_left_ = min(msg.ranges[None], 10)
-    radar_right_ = min(msg.ranges[None], 10)
+    radar_front_ = min(min(msg.ranges[320:400]), 2)
+    radar_left_ = min(msg.ranges[719], 10)
+    radar_right_ = min(msg.ranges[1], 10)
 
     take_action()
 
@@ -112,7 +109,7 @@ def callback(msg):
 def change_state(state):
     global state_, state_dict_
     if state is not state_:
-        print 'Wall follower - [%s] - %s' % (state, state_dict_[state])
+        print('Wall follower - [%s] - %s' % (state, state_dict_[state]))
         state_ = state
 
 
@@ -220,11 +217,11 @@ def main():
     rate = rospy.Rate(20)
     while not rospy.is_shutdown():
         msg = Twist()
-        if state_ == None:
+        if state_ == 0:
             msg = find_wall()
-        elif state_ == None:
+        elif state_ == 1:
             msg = turn_left()
-        elif state_ == None:
+        elif state_ == 2:
             msg = turn_right()
             pass
         else:
