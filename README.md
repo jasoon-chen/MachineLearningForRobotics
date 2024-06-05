@@ -6,7 +6,7 @@ This is to help people self learn basic machine learning concepts through [The C
 4. Principle Component Analaysis
 
 # Status
-I am currently in progress of working through this course.
+I have finished the course. I believe the course is very rich in content with lots of things that you can learn from, however the exercises are slightly confusing with not a lot of explanations. However other than that, I believe that the course has tons of materials that one can learn from. 
 
 # 2 - Linear and Logistic Regression and Regularization
 Although the instructions are clear throughout this lesson, I feel like it does not do enough code explanation for those who are new to utilizing numpy or panda. The python syntax overall should be fine, although I do want to create some explanations on the code. In the section where it explains how to run a LinearRegression, I have added comments to help further understanding of the code. The entire code snippet will be attatched at the end.
@@ -165,3 +165,7 @@ For section 3.3, the explanation for activation functions is not really well exp
 1. [What are Neural Networks?](https://www.youtube.com/watch?v=CqOfi41LfDw&list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1)
 2. [Visualizing Backpropagation](https://www.youtube.com/watch?v=IN2XmBhILt4&list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1&index=5)
 3. [Visualizing ReLU Function](https://www.youtube.com/watch?v=68BZ5f7P94E&list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1&index=8)
+
+For unit 4 and unit 5, I would recommend watching StatsQuest to learn about K-Means Algoirthm and the PCA. 
+1. [K-Means Clustering](https://youtu.be/4b5d3muPQmA?si=ZTJ5TZJIchWuhI5t)
+2. [PCA](https://youtu.be/FgakZw6K1QQ?si=-Q2XJvNj7s7zWPy1)
